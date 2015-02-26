@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  resources :locations
+
+  root 'locations#index'
 
   get 'welcome/codex'
 
